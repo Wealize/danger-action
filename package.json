@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "coverage": "jest --collectCoverage --coverageReporters=json-summary",
-    "eslint": "eslint . -f json -o eslint.json",
-    "danger": "danger ci"
+    "coverage": "npx jest --collectCoverage --coverageReporters=json-summary",
+    "eslint": "npx eslint . -f json -o eslint.json",
+    "danger": "npx danger ci"
   },
   "keywords": [],
   "author": "",
