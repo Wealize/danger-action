@@ -13,4 +13,4 @@ jobs:
           node-version: '12.x'
 
       - name: danger-action-tnp
-        uses: TheNeonProject/danger-action@v0.1
+        uses: TheNeonProject/danger-action@v0.1.1
