@@ -14,3 +14,5 @@ jobs:
 
       - name: danger-action-tnp
         uses: TheNeonProject/danger-action@v0.1.1
+        with:
+          JiraTag: 'hola'
