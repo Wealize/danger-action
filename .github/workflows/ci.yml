@@ -13,7 +13,7 @@ jobs:
           node-version: '12.x'
 
       - name: danger-action-tnp
-        uses: TheNeonProject/danger-action@v0.1.3
+        uses: TheNeonProject/danger-action@v0.1.4
         with:
           jira-tag: 'TNP'
           eslint: true
