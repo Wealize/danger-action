@@ -1,5 +1,5 @@
 import { danger, fail, markdown, message } from 'danger'
-import { istanbulCoverage } from 'danger-plugin-istanbul-coverage'
+const istanbulCoverage = require('danger-plugin-istanbul-coverage').istanbulCoverage
 import jiraIssue from 'danger-plugin-jira-issue'
 import * as fs from 'fs'
 import * as path from 'path'
