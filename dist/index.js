@@ -66,8 +66,20 @@ __webpack_require__.r(__webpack_exports__);
 
 async function run() {
   try {
-    process.env['JIRA_TAG'] = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('JiraTag')
-    child_process__WEBPACK_IMPORTED_MODULE_1__.execSync("npm run danger")
+    process.env['JIRA_TAG'] = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('jira-tag')
+    process.env['JIRA_URL'] = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('jira-url')
+    process.env['COVERAGE'] = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('coverage')
+    process.env['ESLINT'] = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('eslint')
+
+    if (process.env['COVERAGE']) {
+      child_process__WEBPACK_IMPORTED_MODULE_1__.execSync('npm run coverage')
+    }
+
+    if (process.env['ESLINT']) {
+      child_process__WEBPACK_IMPORTED_MODULE_1__.execSync('npm run eslint')
+    }
+
+    child_process__WEBPACK_IMPORTED_MODULE_1__.execSync('npm run danger')
 
   } catch (error) {
     _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error.message);

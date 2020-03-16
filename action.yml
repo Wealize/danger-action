@@ -1,10 +1,26 @@
 name: 'danger-action-tnp'
+author: 'The Neon Project'
 description: 'A danger action to add to your CI'
 inputs:
-  JiraTag:
+  jira-tag:
     description: 'Your repo tag in JIRA'
     required: false
     default: ''
+
+  jira-url:
+    description: 'Your JIRA url'
+    required: false
+    default: 'https://www.example.atlassian.net/browse'
+
+  coverage:
+    description: 'Enable coverage. That implies having tests'
+    required: false
+    default: false
+
+  eslint:
+    description: 'Enable eslint errors'
+    required: false
+    default: false
 runs:
   using: 'node12'
   main: 'dist/index.js'
