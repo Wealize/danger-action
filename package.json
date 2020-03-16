@@ -4,13 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "coverage": "jest --collectCoverage --coverageReporters=json-summary",
+    "eslint": "eslint . -f json -o eslint.json",
+    "danger": "danger ci"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.2.3",
-    "@actions/github": "^2.1.1"
+    "@actions/github": "^2.1.1",
+    "@zeit/ncc": "^0.21.1",
+    "danger": "^9.3.0",
+    "danger-plugin-istanbul-coverage": "^1.6.2",
+    "danger-plugin-jira-issue": "^1.4.1",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0"
   }
 }
