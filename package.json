@@ -14,6 +14,7 @@
   "dependencies": {
     "@actions/core": "^1.2.3",
     "@actions/github": "^2.1.1",
+    "@zeit/ncc": "^0.21.1",
     "danger": "^9.3.0",
     "danger-plugin-istanbul-coverage": "^1.6.2",
     "danger-plugin-jira-issue": "^1.4.1",
