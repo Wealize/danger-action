@@ -1,0 +1,14 @@
+name: 'Danger action'
+description: 'A danger action to add to your CI'
+inputs:
+  JiraTag:
+    description: 'Your repo tag in JIRA'
+    required: false
+    default: ''
+  jiraURL:
+    description: 'Your JIRA URL'
+    required: false
+    default: 'https://yourdomain.atlassian.net/browse'
+runs:
+  using: 'node12'
+  main: 'index.js'
