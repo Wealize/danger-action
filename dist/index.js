@@ -67,7 +67,7 @@ __webpack_require__.r(__webpack_exports__);
 async function run() {
   try {
     process.env['JIRA_TAG'] = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('JiraTag')
-    child_process__WEBPACK_IMPORTED_MODULE_1__.execSync("npm danger")
+    child_process__WEBPACK_IMPORTED_MODULE_1__.execSync("npm run danger")
 
   } catch (error) {
     _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error.message);
