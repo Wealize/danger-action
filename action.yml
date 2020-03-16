@@ -1,4 +1,4 @@
-name: 'Danger action'
+name: 'danger-action-tnp'
 description: 'A danger action to add to your CI'
 inputs:
   JiraTag:
@@ -8,3 +8,7 @@ inputs:
 runs:
   using: 'node12'
   main: 'dist/index.js'
+  
+branding:
+  icon: 'loader'
+  color: 'purple'
