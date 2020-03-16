@@ -16,3 +16,5 @@ jobs:
         uses: TheNeonProject/danger-action@v0.1.3
         with:
           JiraTag: 'hola'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_SECRET }}
